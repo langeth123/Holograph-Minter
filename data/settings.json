@@ -1,0 +1,26 @@
+{
+    "UseNets": ["arbitrum"],
+
+    "ThreadRunnerSleep": [10, 20],
+    "ErrorSleepTiming" : [1, 5],
+    "ContractAddress"  : "0x6D6768A0b24299bEdE0492A4571D79F535c330D8",
+
+    "RPC": {
+        "bsc"       : ["https://rpc.ankr.com/bsc"],
+        "fantom"    : ["https://rpc.ftm.tools"],
+        "polygon"   : ["https://rpc.ankr.com/polygon"],
+        "arbitrum"  : ["https://arb1.arbitrum.io/rpc"],
+        "avalanche" : ["https://api.avax.network/ext/bc/C/rpc"],
+        "optimism"  : ["https://rpc.ankr.com/optimism"]
+    },
+
+    "GWEI": {
+        "fantom"    : 700,
+        "arbitrum"  : 0.16,
+        "avalanche" : 35,
+        "polygon"   : 600,
+        "ethereum"  : 25,
+        "bsc"       : 7,
+        "optimism"  : 0.0015
+    }
+}
