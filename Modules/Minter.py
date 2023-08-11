@@ -9,9 +9,8 @@ def mint(account: Account, net_name: str):
             mint_address = Web3.to_checksum_address(SETTINGS["ContractAddress"])
 
             contract, w3 = account.get_contract(mint_address, net_name, token=ABI)
-            tx_value = SETTINGS["NftPrice"] / get_ticker_price(VALUES[net_name])
-            tx_data = account.get_tx_data(w3, net_name, value=Web3.to_wei(tx_value, 'ether'))
-
+            value = contract.functions.getHolographFeeWei(1).call()
+            tx_data = account.get_tx_data(w3, net_name, value=value)
             tx = contract.functions.purchase(1).build_transaction(tx_data)
 
             hash = account.send_transaction(tx, net_name)
