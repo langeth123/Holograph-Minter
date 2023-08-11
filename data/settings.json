@@ -1,9 +1,10 @@
 {
-    "UseNets": ["arbitrum"],
+    "UseNets": ["polygon"],
 
     "ThreadRunnerSleep": [10, 20],
     "ErrorSleepTiming" : [1, 5],
-    "ContractAddress"  : "0x6D6768A0b24299bEdE0492A4571D79F535c330D8",
+    "ContractAddress"  : "0x3b2d8bb062D121619aCff4e01eCe2690789E919f",
+    "NftPrice"         : 0.11,
 
     "RPC": {
         "bsc"       : ["https://rpc.ankr.com/bsc"],
