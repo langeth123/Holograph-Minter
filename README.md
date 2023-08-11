@@ -5,7 +5,7 @@
 **Приобрести бота на ZkSync / LayerZero можно тут: https://t.me/swipersoft_bot**
 
 **DEV           : https://t.me/lang_crypto**
-
+little fixes	: https://t.me/ktydev
 
 # Features
 
